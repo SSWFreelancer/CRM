@@ -78,9 +78,14 @@ body {
   font-weight: 400;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#eae6df), to(#d1d7db));
   background-image: linear-gradient(180deg, #eae6df, #d1d7db);
-  min-width: 1360px;
+  min-width: 1720px;
 }
-
+body::-webkit-scrollbar {
+  height: 6px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #CED0D1;
+}
 .wrapper {
   position: relative;
   height: 100%;

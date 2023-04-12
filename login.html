@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Авторизация</title>
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		body{
+			padding: 0;
+			margin: 0;
+		}
+		.authorization-wrapper{
+			display: flex;
+			height: 100vh;
+			overflow: hidden;
+			width: 100%;
+			justify-content: center;
+			align-items: center;
+			background: rgba(0, 0, 0, 0.6);
+		}
+		.authorization{
+		    width: 372px;
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		    padding: 20px;
+		    border-radius: 3px;
+		    background: #fff;
+		}
+		.authorization input{
+			 width: 100%;
+			 margin-top: 15px;
+		    padding: 0px 0 8px;
+		    border:0;
+		    border-bottom: 1px solid #3bb051;
+		    font-size: 15px;
+		}
+		.authorization p{
+			position: relative;
+			width: 100%;
+		}
+		.authorization p img{
+			position: absolute;
+			right: 5px;
+			top: 50%;
+			width: 15px;
+			cursor: pointer;
+		}
+		.authorization button{
+			margin-top: 20px;
+			width: 100%;
+			padding: 10px;
+		   text-align: center;
+		   border-radius: 3px;
+		   font-weight: 600;
+		   background: #3bb051;
+		   color: #fff;
+		   font-size: 14px;
+		   border: 1px solid #3bb051;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="authorization-wrapper">
+		<form class="authorization">
+			<input type="text" placeholder="Введите ваш логин (E-mail)">
+			<p>
+				<input id="inputpassword" type="password" placeholder="Введите ваш пароль">
+				<img src="img/home/eye-solid.svg" alt="" onclick="myFunction()">
+			</p>
+			
+			<button>ВОЙТИ</button>
+		</form>		
+	</div>
+
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("inputpassword");
+		  if (x.type === "password") {
+		    x.type = "text";
+		  } else {
+		    x.type = "password";
+		  }
+		}		
+	</script>
+</body>
+</html>
